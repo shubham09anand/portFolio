@@ -1,0 +1,157 @@
+.umbrella {
+     position: relative;
+     top:200px;
+     left:200px;
+   } 
+   
+   .panel {
+     position: absolute;
+     background-color: #333;
+     width:5px;
+     height:110px;
+     top:-50px;
+     z-index:3;
+   }
+   
+   .panel:before {
+     content:"";
+     position: absolute;
+     top:20px;
+     left:-97px;
+     width:200px;
+     height: 350px;
+     opacity:0.1;
+     transition: .2s ease;
+   }
+   
+   .panel:after {
+     content:"";
+     position: absolute;
+     cursor: pointer;
+     width: 200px;
+     height:100px;
+     border-radius: 100px 100px 0 0;
+     background-color: #a4161a;
+     box-shadow: inset 0 -10px #333, inset 50px -10px #ba181b, inset -50px -10px #ba181b;
+     top:-75px;
+     left:-97px;
+     transition: .2s ease;
+     transform-origin: top;
+   }
+   
+   input#panel {
+     display: none;
+   }
+   
+   #panel:checked ~ .panel:after {
+     transform: scaleX(0.2) scaleY(1.5);
+   }
+   
+   #panel:checked + .panel:before {
+     transform: scaleX(0.000001);
+     opacity:0;
+   }
+   
+   .stick {
+     position: absolute;
+     background-color: #000000;
+     width:5px;
+     height:20px;
+     border-radius: 20px 20px 20px 20px;
+     top:-143px;
+     left:0.5;
+     z-index:5;
+   }
+   
+   .stick:before {
+     content:"";
+     position: absolute;
+     border-right: 7px solid #000000;
+     border-bottom: 7px solid #000000;
+     border-left:7px solid transparent;
+     border-top:7px solid transparent;
+     width:20px;
+     height:20px;
+     border-radius:50%;
+     top:193px;
+     left:-1px;
+     transform: rotate(45deg);
+   }
+   
+   .stick:after {
+     content:"";
+     position: absolute;
+     width:7px;
+     height:15px;
+     border-radius:0px 0px 0px 25px;
+     background-color: #000000;
+     top:195px;
+     left:-1px;
+   }
+   .rain {
+     position: absolute;
+   }
+   
+   .dropletOne, .dropletTwo, .dropletThree, .dropletFour, .dropletFive, .dropletSix {
+     position: absolute;
+     width:15px;
+     height: 15px;
+     border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+     background-color: #979dac;
+     top:-20px;
+     left:150px;
+     transform: rotate(-45deg);
+     box-shadow: -80px -100px #979dac, 80px 150px #979dac;
+     animation: rain 4s linear infinite;
+   }
+   
+   .dropletTwo {
+     top:-30px;
+     left:200px;
+     animation: rain 4s linear infinite 1s;
+   }
+   
+   .dropletThree {
+     top:-70px;
+     left:100px;
+     animation: rain 4s linear infinite 2s;
+   }
+   
+   .dropletFour {
+     top:-70px;
+     left:50px;
+     animation: rain 4s linear infinite 2.5s;
+   }
+   
+   .dropletFive {
+     top:-90px;
+     left:10px;
+     animation: rain 4s linear infinite 3s;
+   }
+   .dropletSix {
+     top:-90px;
+     left:10px;
+     animation: rain 4s linear infinite 3s;
+   }
+   
+   @keyframes rain {
+     0% {transform: translateY(-20px) rotate(-45deg);}
+     100% {transform: translateY(450px) rotate(-45deg);}
+   }
+   
+   
+   @keyframes tiltAnimation {
+       0% {
+         transform: rotate(-1deg);
+       }
+       50% {
+         transform: rotate(1deg);
+       }
+       100% {
+         transform: rotate(-1deg);
+       }
+     }
+     
+     .cloud {
+       animation: tiltAnimation 2s infinite;
+     }

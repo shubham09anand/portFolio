@@ -1,0 +1,15 @@
+@keyframes objAnimation {
+	0% {
+	  transform: rotate(-15deg);
+	}
+	50% {
+	  transform: rotate(15deg);
+	}
+	100% {
+	  transform: rotate(-15deg);
+	}
+   }
+   
+   .object {
+	animation: objAnimation 2s infinite;
+   }

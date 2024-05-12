@@ -1,0 +1,57 @@
+
+   @keyframes tiltAnimation {
+    0% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+  
+  .cloud {
+    animation: tiltAnimation 2s infinite;
+  }
+  
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 1);
+    }
+    50% {
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 1);
+    }
+  }
+  
+  .glow-animation {
+    animation: glow 2s infinite alternate;
+  }
+
+  .rotate {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700; /* Sun yellow */
+    border-radius: 50%;
+    animation: rotateObj 10s linear infinite;
+    transform-origin: center center;
+  }
+
+  @keyframes rotateObj {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  
+  
+  

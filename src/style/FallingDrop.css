@@ -1,0 +1,20 @@
+#rain {
+  position: relative;
+  height: 100vh;
+}
+
+.raindrop {
+  background: linear-gradient(to top, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99)); /* Set raindrop color */
+  width: 1px;
+  transform: rotate(10deg);
+  height: 40px;
+  margin: 1px;
+  position: absolute;
+  animation: fallAnimation 3s linear infinite;
+}
+
+@keyframes fallAnimation {
+  to {
+    transform: translateY(200vh);
+  }
+}

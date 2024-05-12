@@ -1,0 +1,22 @@
+@font-face {
+     font-family: 'ImPerfect23';
+     src: url('../assets/ImPerfect23.otf');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clock';
+  src: url('../assets/ClockFont.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url('../assets/Panton-LightCaps.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+   
