@@ -147,7 +147,7 @@ const Home = () => {
                               </div>
 
                               <div className='sm:flex justify-between w-full relative'>
-                                   <img draggable="false" className="select-none  object-cover object-center h-28 w-28 rounded-full absolute -top-20 lg:-top-20 left-1 z-50" src={shuhbam} alt='Loding Image Error' />
+                                   <img draggable="false" className="select-none  object-cover object-center h-28 w-28 rounded-full absolute -top-20 lg:-top-20 left-1 z-50" src={shuhbam} alt='Loding  Error' />
                                    <button className="w-fit absolute -top-5 right-5 h-fit text-xs sm:text-base mx-auto rounded-fullg-gray-900 hover:shadow-lg font-semibold text-white bg-black rounded-full px-5 py-2 glass hidden">Follow</button>
                               </div>
                          </div>

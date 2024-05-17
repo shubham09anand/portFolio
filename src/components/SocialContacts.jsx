@@ -43,7 +43,7 @@ const SocialContacts = () => {
                   <div className='flex flex-wrap'>
                         {conatct.map((data)=>
                           (
-                            <a target='_blank' href={data.link} key={data.id} className={`w-fit px-2 py-2 bg-white text-black active:bg-gray-300 lg:hover:bg-gray-300 m-1 ml-0 cursor-pointer`}>
+                            <a target='_blank' rel="noreferrer" href={data.link} key={data.id} className={`w-fit px-2 py-2 bg-white text-black active:bg-gray-300 lg:hover:bg-gray-300 m-1 ml-0 cursor-pointer`}>
                                   <div className="rounded-lg flex space-x-2 place-content-center items-center">
                                     <div className="w-fit h-fit mx-auto">
                                         {data.svg}

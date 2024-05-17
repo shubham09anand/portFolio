@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Harsh from "../assets/HarshDewangan.jpg";
+import React from 'react';
 
 import socialNest from "../assets/projectPhoto/socialNest.png";
 import vmart from "../assets/projectPhoto/vmart.png";
