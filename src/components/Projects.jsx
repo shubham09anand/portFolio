@@ -4,6 +4,7 @@ import socialNest from "../assets/projectPhoto/socialNest.png";
 import vmart from "../assets/projectPhoto/vmart.png";
 import toDoList from "../assets/projectPhoto/PhotoEditor/ToDoLogo.png";
 import QRMS from "../assets/projectPhoto/QRMS/QRMS.png"; 
+import photoEditor from "../assets/projectPhoto/photoEditor.png";
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -95,7 +96,7 @@ const Projects = () => {
           </Link>
           <div className="group p-2">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <img src={toDoList} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
+              <img src={photoEditor} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
               <div className="md:absolute -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
                   <div className="font-extrabold text-3xl mb-2 text-black">PhotoEditor</div>
