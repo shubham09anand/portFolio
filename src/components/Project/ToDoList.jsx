@@ -24,7 +24,7 @@ const ToDoList = () => {
                     <div className="font-bold text-5xl mb-2 text-[#324997] text-center">To Do List</div>
                     <Carousel className=''>
                         <img className=" mx-auto bg-white" src={photo} alt="To Do List" />
-                        <img className=" mx-auto bg-white" src={photo3} alt="To Do List" />
+                        {/* <img className=" mx-auto bg-white" src={photo3} alt="To Do List" /> */}
                         <img className=" mx-auto bg-white" src={photo0} alt="To Do List" />
                         <img className=" mx-auto bg-white" src={photo1} alt="To Do List" />
                         <img className=" mx-auto bg-white" src={photo2} alt="To Do List" />
