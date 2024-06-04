@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {display:none;}
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .example::-webkit-scrollbar {
   display: none;
