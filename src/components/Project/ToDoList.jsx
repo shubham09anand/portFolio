@@ -8,8 +8,6 @@ import photo from "../../assets/projectPhoto/todolist/photo.png";
 import photo0 from "../../assets/projectPhoto/todolist/photo-0.png";
 import photo1 from "../../assets/projectPhoto/todolist/photo-1.jpg";
 import photo2 from "../../assets/projectPhoto/todolist/photo-2.png";
-import photo3 from "../../assets/projectPhoto/todolist/photo-3.png";
-
 
 const ToDoList = () => {
     return (

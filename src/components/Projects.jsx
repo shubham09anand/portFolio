@@ -4,7 +4,8 @@ import socialNest from "../assets/projectPhoto/socialNest.png";
 import vmart from "../assets/projectPhoto/vmart.png";
 import toDoList from "../assets/projectPhoto/PhotoEditor/ToDoLogo.png";
 import QRMS from "../assets/projectPhoto/QRMS/QRMS.png"; 
-import photoEditor from "../assets/projectPhoto/photoEditor.png";
+import PDFEditor from "../assets/projectPhoto/pdfcollabrtor/pdfEdit.webp"; 
+// import photoEditor from "../assets/projectPhoto/photoEditor.png";
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -93,25 +94,44 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <div className="group p-2">
+          <Link to="/projects/project" className="group p-2">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <img src={photoEditor} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
+              <img src={'https://yt3.googleusercontent.com/ytc/AIdro_l5tZObYHzS68glmJHa8mTawjTNCHt8aRucAN8WOjOCBmU=s160-c-k-c0x00ffffff-no-rj'} className="object-scale-down mx-auto group-hover:scale-110 scale-100 duration-500 w-96 h-72" alt="" />
               <div className="md:absolute -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-black">PhotoEditor</div>
+                  <div className="font-extrabold text-3xl mb-2 text-gray-800">Insider</div>
                   <p className="text-gray-700 text-base">
-                    A Photo Editing Web Based Platform
+                    Blog Managment
                   </p>
                 </div>
                 <div className="px-6 pb-2">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#edit</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#download</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#filter</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#create</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#commnet</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#search</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#share </span>
                 </div>
               </div>
             </div>
-          </div>
-
+          </Link>
+          <Link to="/projects/PdfCollabrator" className="group p-2">
+            <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
+              <img src={PDFEditor} className="object-scale-down mx-auto group-hover:scale-[115%] scale-[120%] duration-500 w-96 h-72" alt="" />
+              <div className="md:absolute -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
+                <div className="px-6 py-4">
+                  <div className="font-extrabold text-3xl mb-2 text-gray-800">PDFCollabrator</div>
+                  <p className="text-gray-700 text-base">
+                    PDF Editor and Collabrator
+                  </p>
+                </div>
+                <div className="px-6 pb-2">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#create</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#commnet</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#search</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#share </span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
       )}
     </div>

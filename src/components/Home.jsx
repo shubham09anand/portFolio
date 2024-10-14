@@ -18,9 +18,9 @@ import SocialNest from './Project/SocialNest';
 import QRMS from './Project/QRMS';
 import VMart from './Project/VMart';
 import ToDoList from './Project/ToDoList';
-
+import BlogManagement from './Project/BlogManagement';
+import PdfCollabrator from './Project/PdfCollabrator';
 import shuhbam from "../assets/shubham.jpg"
-
 
 const Home = () => {
      const [currentTime, setCurrentTime] = useState(getFormattedTime());
@@ -96,7 +96,7 @@ const Home = () => {
           <>
                {<Initial />}
 
-               <div id='cell' style={{ background: backgroundColor }} className='pt- py-'>
+               <div id='cell' style={{ background: backgroundColor }} className='pt- py-10'>
                     <div className='z-[200] w-screen h-14 sm:h-14 backdrop-blur-[10px] fixed top-0 flex '>
                          <div>
                               <div className='flex place-content-center items-end absolute right-0 p-1'>
@@ -195,7 +195,9 @@ const Home = () => {
                               <Route path="/projects/SocialNest" element={<SocialNest />} />
                               <Route path="/projects/QRMS" element={<QRMS />} />
                               <Route path="/projects/VMart" element={<VMart />} />
+                              <Route path="/projects/project" element={<BlogManagement />} />
                               <Route path="/projects/ToDoList" element={<ToDoList />} />
+                              <Route path="/projects/PdfCollabrator" element={<PdfCollabrator />} />
                          </Routes>
                     </div>
                </div>
