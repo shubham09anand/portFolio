@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
 
-
   return (
     <div className='p-5 md:p-10 py-0  relative z-[80] backdrop-blur-sm'>
       {true && (
