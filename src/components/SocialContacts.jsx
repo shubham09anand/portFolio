@@ -16,7 +16,7 @@ const SocialContacts = () => {
           },
           {
             id:9,
-            svg:<img src={socialnestlogo} className='h-6 w-6 grayscale'/>,      
+            svg:<img src={socialnestlogo} className='h-6 w-6 grayscale' alt="imgErr"/>,      
             username:"shubham09anand",
             link: "https://socialnest.shubham09anand.in/searched-person/66fc27d8dbe8c0f1b89431d7",
           },
