@@ -23,10 +23,11 @@ const Projects = () => {
               </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-[#6c8fe1]">SocialNest</div>
-                  <p className="text-gray-700 text-base">
-                    A Social Media Platform
-                  </p>
+                  <div className='mb-2 flex w-fit space-x-3'>
+                    <div className="font-extrabold text-3xl text-[#6c8fe1]">SocialNest</div>
+                    <Link to="/projects/SocialNest" className='text-white px-2 py-.5 rounded-3xl mt-3 bg-black'>Read More</Link>
+                  </div>
+                  <p className="text-gray-700 text-base">A Social Media Platform</p>
                   <a href="https://socialnest.shubham09anand.in" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
@@ -44,17 +45,18 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div to="/projects/project" className="group p-2 relative">
+          <div className="group p-2 relative">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
               <Link to="/projects/blogmanagment">
                 <img src={'https://yt3.googleusercontent.com/ytc/AIdro_l5tZObYHzS68glmJHa8mTawjTNCHt8aRucAN8WOjOCBmU=s160-c-k-c0x00ffffff-no-rj'} className="object-scale-down mx-auto group-hover:scale-110 scale-100 duration-500 w-96 h-72" alt="" />
               </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-gray-800">Insider</div>
-                  <p className="text-gray-700 text-base">
-                    Blog Managment
-                  </p>
+                  <div className='mb-2 flex w-fit space-x-3'>
+                    <div className="font-extrabold text-3xl text-gray-800">Insider</div>
+                    <Link to="/projects/blogmanagment" className='text-white px-2 py-.5 rounded-3xl mt-3 bg-black'>Read More</Link>
+                  </div>
+                  <p className="text-gray-700 text-base">Blog Managment</p>
                   <a href="http://insider.shubham09anand.in/insider" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
@@ -79,10 +81,10 @@ const Projects = () => {
               </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-[#b9bbf4]">PDFCollabrator</div>
-                  <p className="text-gray-700 text-base">
-                    PDF Editor and Collabrator
-                  </p>
+                  <div className='mb-2 flex w-fit space-x-3'>
+                    <div className="font-extrabold text-3xl text-[#b9bbf4]">PDFCollabrator</div>
+                    <Link to="/projects/PdfCollabrator" className='text-white px-2 py-.5 rounded-3xl mt-3 bg-black'>Read More</Link>
+                  </div>
                   <a href="https://pdfcollaborator.shubham09anand.in" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
@@ -108,10 +110,11 @@ const Projects = () => {
               </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-gray-800">QR Code Genrator</div>
-                  <p className="text-gray-700 text-base">
-                    QR Code Genrator
-                  </p>
+                  <div className='mb-2 flex w-fit space-x-3'>
+                    <div className="font-extrabold text-2xl sm:text-3xl text-gray-800">QR Code Genrator</div>
+                    <Link to="/projects/QrCode" className='text-white px-2 py-.1 rounded-2xl mt-3 bg-black'>Read More</Link>
+                  </div>
+                  <p className="text-gray-700 text-base">QR Code Genrator</p>
                   <a href="https://qrcode.shubham09anand.in/" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
@@ -134,10 +137,11 @@ const Projects = () => {
               <img src={QRMS} className="mx-auto group-hover:scale-110 duration-500 w-96 h-72" alt="" />
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-2xl mb-2"><span className='text-green-400'>BIT Quarterly</span> <span className='text-yellow-400'>Report</span> <span className='text-blue-400'>Management</span> <span className='text-red-400'>System</span></div>
-                  <p className="text-gray-700 text-base">
-                    Report Management System
-                  </p>
+                  <div className='mb-2 w-full'>
+                    <div className="font-extrabold text-2xl mb-2"><span className='text-green-400'>BIT Quarterly</span> <span className='text-yellow-400'>Report</span> <span className='text-blue-400'>Management</span> <span className='text-red-400'>System</span></div>
+                    <Link to="/projects/QRMS" className='text-white px-2 py-.5 rounded-3xl mt-3 bg-black'>Read More</Link>
+                  </div>
+                  <p className="text-gray-700 text-base">Report Management System</p>
                 </div>
                 <div className="px-6 pb-2">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#BIT</span>
@@ -155,10 +159,11 @@ const Projects = () => {
               <img src={vmart} className="mx-auto group-hover:scale-110 scale-75 duration-500 w-96 h-72" alt="" />
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-green-400">V-Mart</div>
-                  <p className="text-gray-700 text-base">
-                    A E-Commerce Website
-                  </p>
+                  <div className='mb-2 flex w-fit space-x-3'>
+                    <div className="font-extrabold text-3xl text-green-400">V-Mart</div>
+                    <Link to="/projects/VMart" className='text-white px-2 py-.5 rounded-3xl mt-3 bg-black'>Read More</Link>
+                  </div>
+                  <p className="text-gray-700 text-base">A E-Commerce Website</p>
                 </div>
                 <div className="px-6 pb-2">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sell</span>
@@ -174,10 +179,11 @@ const Projects = () => {
               <img src={toDoList} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
-                  <div className="font-extrabold text-3xl mb-2 text-[#ed4935]">To Do List</div>
-                  <p className="text-gray-700 text-base">
-                    A Task Manager
-                  </p>
+                  <div className='mb-2 flex w-fit space-x-3'>
+                    <div className="font-extrabold text-3xl text-[#ed4935]">To Do List</div>
+                    <Link to="/projects/ToDoList" className='text-white px-2 py-.5 rounded-3xl mt-3 bg-black'>Read More</Link>
+                  </div>
+                  <p className="text-gray-700 text-base">A Task Manager</p>
                 </div>
                 <div className="px-6 pb-2">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#task</span>
