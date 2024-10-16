@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-import photo1 from "../../assets/projectPhoto/Blogmanagment/photo1.png";
-import photo2 from "../../assets/projectPhoto/Blogmanagment/photo2.png";
-import photo3 from "../../assets/projectPhoto/Blogmanagment/photo3.png";
-import photo4 from "../../assets/projectPhoto/Blogmanagment/photo4.png";
-import photo5 from "../../assets/projectPhoto/Blogmanagment/photo5.png";
-import photo6 from "../../assets/projectPhoto/Blogmanagment/photo6.png";
-// import photo7 from "../../assets/projectPhoto/Blogmanagment/photo7.png";
+import photo1 from "../../assets/projectPhoto/QrCode/photo1.png";
+import photo2 from "../../assets/projectPhoto/QrCode/photo2.png";
 
-const BlogManagement = () => {
+const QrCode = () => {
      return (
           <div className="text-zinc-800">
                <div className="md: items-center rounded-lg py-10 bg-gray-100">
@@ -22,30 +17,25 @@ const BlogManagement = () => {
                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                               </svg>
                          </Link>
-                         <div className="font-bold text-3xl mb-2 text-[#febf2c] text-center">Insider</div>
+                         <div className="font-bold text-3xl mb-2 text-black text-center">QrCode Genrator</div>
                          <Carousel className=''>
-                              <img className=" mx-auto bg-white" src={photo3} alt="blogManagment" />
                               <img className=" mx-auto bg-white" src={photo1} alt="blogManagment" />
                               <img className=" mx-auto bg-white" src={photo2} alt="blogManagment" />
-                              <img className=" mx-auto bg-white" src={photo4} alt="blogManagment" />
-                              <img className=" mx-auto bg-white" src={photo5} alt="blogManagment" />
-                              <img className=" mx-auto bg-white" src={photo6} alt="blogManagment" />
                          </Carousel>
                     </div>
-                    <div className='bg-gradient-to-br from-[#f7f4ed] via-[#fbedcc] to-[#fcd883] scale-95 rounded-lg p-5 shadow-2xl'>
+                    <div className='bg-gradient-to-br from-[#1facc2] via-[#00b2cd] to-[#1facc2] scale-95 rounded-lg p-5 shadow-2xl'>
                          <div className='p-2'>
                               <div className="py-4">
-                                   <div className="font-bold text-3xl mb-2 text-[#f3ba36]">About</div>
+                                   <div className="font-bold text-3xl mb-2 text-[#0e464f]">About</div>
                                    <p className="font-medium text-xl">
-                                   INSIDER is a blog management platform with Jodit as the text editor, making content creation and editing effortless. It simplifies post organization, managing images and tags, while ensuring scalability and performance, all deployed on AWS.
+                                        Last month, I had the opportunity to develop a web-based QR code generator for 𝗞𝗲𝗿𝗮𝗺 𝗥𝗲𝘀𝘁𝗮𝘂𝗿𝗮𝗻𝘁 ( <a href="https://keramrestaurant.co.uk/" className='text-blue-700'>keramrestaurant</a> ) in 𝗡𝗼𝗿𝘄𝗶𝗰𝗵, 𝗕𝗿𝗶𝘁𝗮𝗶𝗻 🇬🇧.
+                                        This tool enables restaurant employees to easily generate QR codes for their daily menu items and social media advertisements, helping them expand their presence locally and beyond.
+                                        The project was built using 𝗥𝗲𝗮𝗰𝘁.𝗷𝘀 and 𝗧𝗮𝗶𝗹𝘄𝗶𝗻𝗱 𝗖𝗦𝗦 and deployed remotely on 𝗩𝗲𝗿𝗰𝗲𝗹 for smooth performance.
                                    </p>
                               </div>
                               <h2 className="font-extrabold text-2xl mb-2">Technologies</h2>
                               <div>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Golang</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Gin Framework</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">React.js</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">MongoDB</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">CSS</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Tailwind</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Java Script</span>
@@ -57,12 +47,9 @@ const BlogManagement = () => {
                          <div>
                               <h2 className="font-extrabold text-2xl mb-2 mt-4">Features</h2>
                               <div>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Read</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Create</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Edit</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Comment</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Filter</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Share</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">qrcode</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">scan</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">share</span>
                               </div>
                          </div>
                          <div className='mt-5 text-white text-sm font-extrabold'>To See The Source Code Visit My GitHub Account From Contact Section</div>
@@ -72,4 +59,4 @@ const BlogManagement = () => {
      )
 }
 
-export default BlogManagement
+export default QrCode

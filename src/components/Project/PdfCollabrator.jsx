@@ -27,7 +27,7 @@ const PdfCollabrator = () => {
                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                               </svg>
                          </Link>
-                         <div className="font-bold text-3xl mb-2 text-[#34ab45] text-center">BIT Quarterly Report Management System</div>
+                         <div className="font-bold text-3xl mb-2 text-[#7b5df4] text-center">PDFCollaborator</div>
                          <Carousel className=''>
                               <img className=" mx-auto bg-white" src={photo1} alt="pdfCollab" />
                               <img className=" mx-auto bg-white" src={photo10} alt="pdfCollab" />
@@ -42,37 +42,38 @@ const PdfCollabrator = () => {
                               <img className=" mx-auto bg-white" src={photo9} alt="pdfCollab" />
                          </Carousel>
                     </div>
-                    <div className='bg-gradient-to-br from-green-100 via-green-500 to-green-800 scale-95 rounded-lg p-5 shadow-2xl'>
+                    <div className='bg-gradient-to-br from-[#97bbf8] via-[#937cf1] to-[#7656f5] scale-95 rounded-lg p-5 shadow-2xl'>
                          <div className='p-2'>
                               <div className="py-4">
-                                   <div className="font-bold text-3xl mb-2 text-[#34ab45]">About</div>
+                                   <div className="font-bold text-3xl mb-2 text-[#2c79ff]">About</div>
                                    <p className="font-medium text-xl">
-                                   INSIDER is a blog management platform with Jodit as the text editor, making content creation and editing effortless. It simplifies post organization, managing images and tags, while ensuring scalability and performance, all deployed on AWS.
+                                        PDFCollabrator is a comprehensive PDF editor featuring merge, image conversion, page deletion, and shuffling. Users can create PDFs via a text editor with AI support for queries and news summaries. It also enables real-time collaboration with messaging functionality for seamless communication and document editing.
                                    </p>
                               </div>
                               <h2 className="font-extrabold text-2xl mb-2">Technologies</h2>
                               <div>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Golang</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Gin Framework</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Java Script</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Node.js</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">React.js</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">MongoDB</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">CSS</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Tailwind</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Java Script</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Responive UI</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Cross Browser Compatiblity</span>
                                    <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">AWS</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Gemini</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Web Scrapping</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Puppeter</span>
                               </div>
                          </div>
                          <div>
                               <h2 className="font-extrabold text-2xl mb-2 mt-4">Features</h2>
                               <div>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Read</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Create</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Edit</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Comment</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Filter</span>
-                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Share</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Cretate</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Merge PDF</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Split PDF</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">Delete Pages</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold">Image to PDF</span>
+                                   <span className="inline-block bg-gray-900 text-white rounded-full m-1 px-3 py-1 text-sm font-semibold mr-2">PDF to Images</span>
                               </div>
                          </div>
                          <div className='mt-5 text-white text-sm font-extrabold'>To See The Source Code Visit My GitHub Account From Contact Section</div>
