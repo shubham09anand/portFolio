@@ -13,8 +13,11 @@ import express from "../assets/express.png";
 import jquery from "../assets/jquery.png";
 import python from "../assets/python.jpg";
 import java from "../assets/java.png";
+import ginFramework from "../assets/ginFramework.png";
+import aws from "../assets/aws.png";
+import goLang from "../assets/goLang.png";
 
-const Experiences = (textcolor) => {
+const Experiences = ({ textcolor }) => {
   const techs = [
     {
       id: 1,
@@ -68,16 +71,31 @@ const Experiences = (textcolor) => {
     },
     {
       id: 11,
+      src: goLang,
+      title: "Golang",
+    },
+    {
+      id: 12,
+      src: ginFramework,
+      title: "Gin Framework",
+    },
+    {
+      id: 13,
       src: express,
       title: "Express.js",
     },
     {
-      id:12,
+      id: 14,
+      src: aws,
+      title: "AWS",
+    },
+    {
+      id: 15,
       src: python,
       title: "Python",
     },
     {
-      id: 13,
+      id: 16,
       src: java,
       title: "Java",
     },
@@ -115,11 +133,15 @@ const Experiences = (textcolor) => {
             </div>
             <h1 className="title-font text-3xl pl-5 font-bold">Backend End</h1>
             <div className="flex flex-wrap mb-2">
-              {renderTechs(9,11)}
+              {renderTechs(9,13)}
+            </div>
+            <h1 className="title-font text-3xl pl-5 font-bold">Cloud</h1>
+            <div className="flex flex-wrap mb-2">
+              {renderTechs(14,14)}
             </div>
             <h1 className="title-font text-3xl pl-5 font-bold">Other Technologies</h1>
             <div className="flex flex-wrap mb-2">
-              {renderTechs(12,13)}
+              {renderTechs(15,16)}
             </div>
           </div>
         </section>

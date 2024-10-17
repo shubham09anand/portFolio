@@ -52,10 +52,10 @@ body::-webkit-scrollbar {
     width: 0;
   }
   30% {
-    width: 43px;
+    width: 48px;
   }
   75% {
-    width: 43px;
+    width: 48px;
   }
   100% {
     width: 0;

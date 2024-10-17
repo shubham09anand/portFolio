@@ -132,9 +132,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <Link to="/projects/QRMS" className="group p-2 relative">
+          <div className="group p-2 relative">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <img src={QRMS} className="mx-auto group-hover:scale-110 duration-500 w-96 h-72" alt="" />
+              <Link to="/projects/QRMS">
+                <img src={QRMS} className="mx-auto group-hover:scale-110 duration-500 w-96 h-72" alt="" />
+              </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
                   <div className='mb-2 w-full'>
@@ -153,10 +155,12 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </Link>
-          <Link to="/projects/VMart" className="group p-2 relative">
+          </div>
+          <div className="group p-2 relative">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <img src={vmart} className="mx-auto group-hover:scale-110 scale-75 duration-500 w-96 h-72" alt="" />
+              <Link to="/projects/VMart">
+                <img src={vmart} className="mx-auto group-hover:scale-110 scale-75 duration-500 w-96 h-72" alt="" />
+              </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
                   <div className='mb-2 flex w-fit space-x-3'>
@@ -173,10 +177,12 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </Link>
-          <Link to="/projects/ToDoList" className="group p-2 relative">
+          </div>
+          <div className="group p-2 relative">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <img src={toDoList} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
+              <Link to="/projects/ToDoList">
+                <img src={toDoList} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
+              </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
                   <div className='mb-2 flex w-fit space-x-3'>
@@ -193,7 +199,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
       )}
     </div>
