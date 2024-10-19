@@ -95,7 +95,7 @@ const Home = () => {
           <>
                {<Initial />}
 
-               <div id='cell' style={{ background: backgroundColor }} className='pt- py-10'>
+               <div id='cell' style={{ background: backgroundColor }} className='py-.5'>
                     <div className='z-[200] w-screen h-14 sm:h-14 backdrop-blur-[10px] fixed top-0 flex '>
                          <div>
                               <div className='flex place-content-center items-end absolute right-0 p-1'>
@@ -121,7 +121,7 @@ const Home = () => {
                                         </svg>
                                    </div>
                               </div>
-                              <div className="flex bg-white rounded-lg shadow-lg mt-2 ml-2 p-2">
+                              <div className="flex bg-white rounded-lg shadow-lg mt-2 ml-2 p-2 select-none">
                                    <div className="text-base md:text-3xl Panton font-bold">S</div>
                                    <div className="text-xs md:text-sm pt-1.5 md:pt-3.5 Panton font-bold w-0 animated-div1">hubham</div>
                                    <div className="text-base md:text-3xl Panton font-bold">A</div>
@@ -150,28 +150,37 @@ const Home = () => {
                                    <button className="w-fit absolute -top-5 right-5 h-fit text-xs sm:text-base mx-auto rounded-fullg-gray-900 hover:shadow-lg font-semibold text-white bg-black rounded-full px-5 py-2 glass hidden">Follow</button>
                               </div>
                          </div>
-                         <div className="body-font border-b p-5">
+                         <div className="body-font border-b p-3">
                               <div className="container pt-16 md:pt-0 md:-translate-y-4 pl-5">
                                    <div className="flex flex-wrap -mx-4 -my-8">
                                         <div className="md:mt-20">
                                              <div className="h-full flex items-start">
                                                   <div className="flex-grow">
-                                                       <h1 className="title-font text-3xl md:text-4xl font-bold mb-2">Shubham Anand</h1>
-                                                       <div className='flex flex-wrap'>
-                                                            <span className="flex items-center gap-1 m-2 ml-0 mt-0">
+                                                       <div className='flex gap-x-2 sm:gap-x-5'>
+                                                            <h1 className="title-font text-3xl md:text-4xl font-bold mb-2">Shubham Anand</h1>
+                                                            <div className='select-none cursor-pointer active:opacity-50 lg:hover:opacity-50 scale-90 flex sm:space-x-3 place-content-center items-center mt-0.5 md:mt-2 space-x-1 px-3 w-32 h-8 rounded-full bg-black'>
+                                                                 <div className='font-bold tracking-wide text-white'>Resume</div>
+                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="white" className="w-5 h-5">
+                                                                      <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                                 </svg>
+                                                            </div>
+                                                       </div>
+
+                                                       <div className='flex flex-wrap pb-5 md:pb-0 gap-3'>
+                                                            <span className="flex items-center gap-1 ml-0 mt-0">
                                                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                                                       <path fillRule="evenodd" d="M6 3.75A2.75 2.75 0 018.75 1h2.5A2.75 2.75 0 0114 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 016 4.193V3.75zm6.5 0v.325a41.622 41.622 0 00-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25zM10 10a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V11a1 1 0 00-1-1H10z" clipRule="evenodd"></path>
                                                                       <path d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 01-9.274 0C3.985 17.585 3 16.402 3 15.055z"></path>
                                                                  </svg>
                                                                  <span className="whitespace-nowrap"><span>Student</span></span>
                                                             </span>
-                                                            <span className="flex items-center gap-1 m-2 mt-0">
+                                                            <span className="flex items-center gap-1 mt-0">
                                                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                                                       <path d="M6.75.98l-.884.883a1.25 1.25 0 101.768 0L6.75.98zM13.25.98l-.884.883a1.25 1.25 0 101.768 0L13.25.98zM10 .98l.884.883a1.25 1.25 0 11-1.768 0L10 .98zM7.5 5.75a.75.75 0 00-1.5 0v.464c-1.179.305-2 1.39-2 2.622v.094c.1-.02.202-.038.306-.051A42.869 42.869 0 0110 8.5c1.93 0 3.83.129 5.694.379.104.013.206.03.306.051v-.094c0-1.232-.821-2.317-2-2.622V5.75a.75.75 0 00-1.5 0v.318a45.645 45.645 0 00-1.75-.062V5.75a.75.75 0 00-1.5 0v.256c-.586.01-1.17.03-1.75.062V5.75zM4.505 10.365A41.377 41.377 0 0110 10c1.863 0 3.697.124 5.495.365C16.967 10.562 18 11.838 18 13.28v.693a3.72 3.72 0 01-1.665-.393 5.222 5.222 0 00-4.67 0 3.722 3.722 0 01-3.33 0 5.222 5.222 0 00-4.67 0A3.72 3.72 0 012 13.972v-.693c0-1.441 1.033-2.716 2.505-2.914zM15.665 14.921a5.22 5.22 0 002.335.551V16.5a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 012 16.5v-1.028c.8 0 1.6-.183 2.335-.551a3.722 3.722 0 013.33 0c1.47.735 3.2.735 4.67 0a3.722 3.722 0 013.33 0z"></path>
                                                                  </svg>
                                                                  <span className="whitespace-nowrap">September 23th '03</span>
                                                             </span>
-                                                            <span className="flex items-center gap-1 m-2 mt-0">
+                                                            <span className="flex items-center gap-1 mt-0">
                                                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                                                       <path d="M5.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V12zM6 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H6zM7.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H8a.75.75 0 01-.75-.75V12zM8 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H8zM9.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V10zM10 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H10zM9.25 14a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V14zM12 9.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V10a.75.75 0 00-.75-.75H12zM11.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75V12zM12 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H12zM13.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H14a.75.75 0 01-.75-.75V10zM14 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H14z"></path>
                                                                       <path fillRule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clipRule="evenodd"></path>

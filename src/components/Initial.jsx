@@ -8,7 +8,7 @@ const Initial = () => {
                <div className="box">
                     <div className="title">
                          <span className="block"></span>
-                         <h1 className='font-mono'>Shubham Anand<span></span></h1>
+                         <h1 className='font-mono'>Shubham Anand</h1>
                     </div>
                </div>
           </div>
