@@ -28,7 +28,7 @@ const Projects = () => {
                     <Link to="/projects/SocialNest" className='text-white px-2 rounded-3xl mt-2.5 bg-black'>Read More</Link>
                   </div>
                   <p className="text-gray-700 text-base">A Social Media Platform</p>
-                  <a target='_blank' href="https://socialnest.shubham09anand.in" className='flex space-x-2 place-content-center items-center w-fit'>
+                  <a target='_blank' rel="noreferrer" href="https://socialnest.shubham09anand.in" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
                       <path fillRule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
@@ -56,7 +56,7 @@ const Projects = () => {
                     <div className="font-extrabold text-3xl text-[#b9bbf4]">PDFCollabrator</div>
                     <Link to="/projects/PdfCollabrator" className='text-white px-2 rounded-3xl mt-2.5 bg-black'>Read More</Link>
                   </div>
-                  <a target='_blank' href="https://pdfcollaborator.shubham09anand.in" className='flex space-x-2 place-content-center items-center w-fit'>
+                  <a target='_blank' rel="noreferrer" href="https://pdfcollaborator.shubham09anand.in" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
                       <path fillRule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
@@ -86,7 +86,7 @@ const Projects = () => {
                     <Link to="/projects/QrCode" className='text-white px-2 rounded-3xl mt-2 bg-black'>Read More</Link>
                   </div>
                   <p className="text-gray-700 text-base">QR Code Genrator</p>
-                  <a target='_blank' href="https://qrcode.shubham09anand.in/" className='flex space-x-2 place-content-center items-center w-fit'>
+                  <a target='_blank' rel="noreferrer" href="https://qrcode.shubham09anand.in/" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
                       <path fillRule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
@@ -96,7 +96,7 @@ const Projects = () => {
                 </div>
                 <div className="px-6 pb-2">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#qrcode</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#style</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#customize</span>
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#logo</span>
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#bussiness</span>
                 </div>
@@ -115,12 +115,12 @@ const Projects = () => {
                     <Link to="/projects/blogmanagment" className='text-white px-2 rounded-3xl mt-2.5 bg-black'>Read More</Link>
                   </div>
                   <p className="text-gray-700 text-base">Blog Managment</p>
-                  <a target='_blank' href="http://insider.shubham09anand.in/insider" className='flex space-x-2 place-content-center items-center w-fit'>
+                  <a target='_blank' rel="noreferrer" href="https://insider.shubham09anand.in/insider" className='flex space-x-2 place-content-center items-center w-fit'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#1d10ac" strokeWidth="2" className="bi bi-box-arrow-up-right h-4 w-4 font-extrabold" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
                       <path fillRule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
                     </svg>
-                    <div className='text-[#1d10ac] text-sm font-bold'>http://insider.shubham09anand.in/insider</div>
+                    <div className='text-[#1d10ac] text-sm font-bold'>https://insider.shubham09anand.in/insider</div>
                   </a>
                 </div>
                 <div className="px-6 pb-2">
