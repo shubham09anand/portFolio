@@ -158,7 +158,7 @@ const Home = () => {
                                                   <div className="flex-grow">
                                                        <div className='flex gap-x-2 sm:gap-x-5'>
                                                             <h1 className="title-font text-3xl md:text-4xl font-bold mb-2">Shubham Anand</h1>
-                                                            <div className='select-none cursor-pointer active:opacity-50 lg:hover:opacity-50 scale-90 flex sm:space-x-3 place-content-center items-center mt-0.5 md:mt-2 space-x-1 px-3 w-32 h-8 rounded-full bg-black'>
+                                                            <div className='hidden select-none cursor-pointer active:opacity-50 lg:hover:opacity-50 scale-90 sm:space-x-3 place-content-center items-center mt-0.5 md:mt-2 space-x-1 px-3 w-32 h-8 rounded-full bg-black'>
                                                                  <div className='font-bold tracking-wide text-white'>Resume</div>
                                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="white" className="w-5 h-5">
                                                                       <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
