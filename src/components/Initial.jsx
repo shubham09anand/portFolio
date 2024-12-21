@@ -4,7 +4,7 @@ import "../style/Inital.scss";
 const Initial = ({ color }) => {
      return (
           <div>
-               <div className={`InitialContainer bg-${color}`}>
+               <div className={`InitialContainer bg-${color === 'black' ? 'black' : 'black'}`}>
                     <div className="box">
                          <div className="title">
                               <span className="block"></span>
