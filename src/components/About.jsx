@@ -7,7 +7,7 @@ const About = () => {
       <div className='p-5 md:px-10 py-5 shadow-sm  backdrop-blur-md relative z-[50]'>
         <div className='font-bold text-4xl mb-5'>Hellow! 👌</div>
         <div className='mb-2 font-[300]'>Hello! I'm Shubham Anand, I am 20-year old with a budding passion for web development. Currently , I am pursuing Computer Science Engineering at Bhilai Institute Of Technology, Durg, Chhattisgarh.</div>
-        <div className='mb-2 font-[300]'>Feel free to reach out if you're interested in chatting about coding, web development, or just sharing experiences. You can search on any popular social media platform with username <span className='px-1 pb-1 font-bold rounded-md w-fit'>shubham09anand</span>, or you can check out specfic contacts above;</div>
+        <div className='mb-2 font-[300]'>Feel free to reach out if you're interested in chatting about coding, web development, or just sharing experiences. You can search on any popular social media platform with username <span className='font-bold rounded-md w-fit text-ellipsis'>shubham09anand</span>, or you can check out specfic contacts above;</div>
         <div>
         </div>
         <div className='pl-4'>
