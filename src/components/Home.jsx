@@ -95,7 +95,7 @@ const Home = () => {
 
      return (
           <>
-               {<Initial />}
+               {<Initial color={color} />}
 
                <div id='cell' style={{ background: backgroundColor }} className='py-.5'>
                     <div className='z-[200] w-screen h-14 sm:h-14 backdrop-blur-[10px] fixed top-0 flex '>
