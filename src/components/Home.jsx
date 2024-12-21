@@ -33,6 +33,7 @@ const Home = () => {
      const [isNightVisible, setIsNightVisible] = useState(false);
      const [isRainVisible, setIsRainVisible] = useState(false);
      const [isSnowVisible, setIsSnowVisible] = useState(false);
+     const [color, setColor] = useState();
      const currentDate = new Date();
      const options = { weekday: 'long', month: 'long', day: 'numeric' };
      const formattedDate = currentDate.toLocaleDateString('en-US', options);
@@ -61,7 +62,7 @@ const Home = () => {
 
      }
 
-     const setWeatherState = (svgColor, bgColor, textColor, gradient, isSunny, isNight, isRain, isSnow) => {
+     const setWeatherState = (svgColor, bgColor, textColor, gradient, isSunny, isNight, isRain, isSnow, color) => {
           setsvgCol(svgColor);
           setBackgroundColor(bgColor);
           settextcolor(textColor);
@@ -70,6 +71,7 @@ const Home = () => {
           setIsNightVisible(isNight);
           setIsRainVisible(isRain);
           setIsSnowVisible(isSnow);
+          setColor(color)
      };
 
      useEffect(() => {
@@ -99,23 +101,23 @@ const Home = () => {
                     <div className='z-[200] w-screen h-14 sm:h-14 backdrop-blur-[10px] fixed top-0 flex '>
                          <div>
                               <div className='flex place-content-center items-end absolute right-0 p-1'>
-                                   <div onClick={() => setWeatherState('black', 'white', 'black', 'bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800', true, false, false, false)} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
+                                   <div onClick={() => setWeatherState('black', 'white', 'black', 'bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800', true, false, false, false, 'black')} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill={svgCol} viewBox="0 0 24 24" strokeWidth="1.5" stroke={svgCol} className="w-7 h-7 md:w-8 md:h-8">
                                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                                         </svg>
                                    </div>
-                                   <div onClick={() => setWeatherState('white', 'linear-gradient(to right, black, black, black)', 'white', 'bg-gradient-to-r from-gray-500 via-gray-900 to-black', false, true, false, false)} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
+                                   <div onClick={() => setWeatherState('white', 'linear-gradient(to right, black, black, black)', 'white', 'bg-gradient-to-r from-gray-500 via-gray-900 to-black', false, true, false, false, 'white')} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill={svgCol} className="bi bi-moon-stars-fill" viewBox="0 0 16 16">
                                              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
                                              <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
                                         </svg>
                                    </div>
-                                   <div onClick={() => setWeatherState('black', 'linear-gradient(to right, #a0aec0, #cbd5e0, #a0aec0)', 'black', 'bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600', false, false, true, false)} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
+                                   <div onClick={() => setWeatherState('black', 'linear-gradient(to right, #a0aec0, #cbd5e0, #a0aec0)', 'black', 'bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600', false, false, true, false, 'black')} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill={svgCol} className="bi bi-cloud-rain-fill" viewBox="0 0 16 16">
                                              <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm.247-6.998a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973z" />
                                         </svg>
                                    </div>
-                                   <div onClick={() => setWeatherState('white', 'linear-gradient(to right, #a2e0e9, #66c1d4, #3a8ea2)', '#2c2c2c', 'bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-600', false, false, false, true)} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
+                                   <div onClick={() => setWeatherState('white', 'linear-gradient(to right, #a2e0e9, #66c1d4, #3a8ea2)', '#2c2c2c', 'bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-600', false, false, false, true, 'black')} className='cursor-pointer active:bg-slate-80 md:hover:opacity-80 rounded-md p-2'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill={svgCol} className="bi bi-cloud-snow-fill" viewBox="0 0 16 16">
                                              <path d="M2.625 11.5a.25.25 0 0 1 .25.25v.57l.501-.287a.25.25 0 0 1 .248.434l-.495.283.495.283a.25.25 0 0 1-.248.434l-.501-.286v.569a.25.25 0 1 1-.5 0v-.57l-.501.287a.25.25 0 0 1-.248-.434l.495-.283-.495-.283a.25.25 0 0 1 .248-.434l.501.286v-.569a.25.25 0 0 1 .25-.25zm2.75 2a.25.25 0 0 1 .25.25v.57l.5-.287a.25.25 0 0 1 .249.434l-.495.283.495.283a.25.25 0 0 1-.248.434l-.501-.286v.569a.25.25 0 1 1-.5 0v-.57l-.501.287a.25.25 0 0 1-.248-.434l.495-.283-.495-.283a.25.25 0 0 1 .248-.434l.501.286v-.569a.25.25 0 0 1 .25-.25zm5.5 0a.25.25 0 0 1 .25.25v.57l.5-.287a.25.25 0 0 1 .249.434l-.495.283.495.283a.25.25 0 0 1-.248.434l-.501-.286v.569a.25.25 0 0 1-.5 0v-.57l-.501.287a.25.25 0 0 1-.248-.434l.495-.283-.495-.283a.25.25 0 0 1 .248-.434l.501.286v-.569a.25.25 0 0 1 .25-.25zm-2.75-2a.25.25 0 0 1 .25.25v.57l.5-.287a.25.25 0 0 1 .249.434l-.495.283.495.283a.25.25 0 0 1-.248.434l-.501-.286v.569a.25.25 0 1 1-.5 0v-.57l-.501.287a.25.25 0 0 1-.248-.434l.495-.283-.495-.283a.25.25 0 0 1 .248-.434l.501.286v-.569a.25.25 0 0 1 .25-.25zm5.5 0a.25.25 0 0 1 .25.25v.57l.5-.287a.25.25 0 0 1 .249.434l-.495.283.495.283a.25.25 0 0 1-.248.434l-.501-.286v.569a.25.25 0 0 1-.5 0v-.57l-.501.287a.25.25 0 1 1-.248-.434l.495-.283-.495-.283a.25.25 0 0 1 .248-.434l.501.286v-.569a.25.25 0 0 1 .25-.25zm-.22-7.223a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10.25H13a3 3 0 0 0 .405-5.973z" />
                                         </svg>
@@ -195,7 +197,7 @@ const Home = () => {
                               </div>
                               <SocialContacts />
                          </div>
-                         <Navbar />
+                         <Navbar color={color} />
                          <Routes>
                               <Route path="/" element={<About />} />
                               <Route path="/projects" element={<Projects />} />
