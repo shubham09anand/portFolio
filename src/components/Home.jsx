@@ -21,7 +21,7 @@ import ToDoList from './Project/ToDoList';
 import BlogManagement from './Project/BlogManagement';
 import PdfCollabrator from './Project/PdfCollabrator';
 import QrCode from './Project/QrCode';
-import shuhbam from "../assets/shubham.jpg"
+import shuhbam from "../assets/shubham.png"
 
 const Home = () => {
      const [currentTime, setCurrentTime] = useState(getFormattedTime());
