@@ -1,11 +1,8 @@
 import React from 'react';
 
 import socialNest from "../assets/projectPhoto/socialNest.png";
-import vmart from "../assets/projectPhoto/vmart.png";
-import toDoList from "../assets/projectPhoto/PhotoEditor/ToDoLogo.png";
-import QRMS from "../assets/projectPhoto/QRMS/QRMS.png";
 import PDFEditor from "../assets/projectPhoto/pdfcollabrtor/pdfEdit.jpg";
-// import photoEditor from "../assets/projectPhoto/photoEditor.png";
+import BlogImage from "../assets/projectPhoto/Blogmanagment/blogjpg.jpg";
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -106,7 +103,7 @@ const Projects = () => {
           <div className="group p-2 relative mt-5">
             <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
               <Link to="/projects/blogmanagment">
-                <img src={'https://yt3.googleusercontent.com/ytc/AIdro_l5tZObYHzS68glmJHa8mTawjTNCHt8aRucAN8WOjOCBmU=s160-c-k-c0x00ffffff-no-rj'} className="object-scale-down mx-auto group-hover:scale-110 scale-100 duration-500 w-96 h-72" alt="" />
+                <img src={BlogImage} className="object-contain mx-auto group-hover:scale-110 scale-100 duration-500 w-96 h-72" alt="" />
               </Link>
               <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
                 <div className="px-6 py-4">
@@ -128,74 +125,6 @@ const Projects = () => {
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#commnet</span>
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#search</span>
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#share </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group p-2 relative mt-5">
-            <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <Link to="/projects/QRMS">
-                <img src={QRMS} className="mx-auto group-hover:scale-110 duration-500 w-96 h-72" alt="" />
-              </Link>
-              <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
-                <div className="px-6 py-4">
-                  <div className='mb-2 w-full'>
-                    <div className="font-extrabold text-2xl mb-2"><span className='text-green-400'>BIT Quarterly</span> <span className='text-yellow-400'>Report</span> <span className='text-blue-400'>Management</span> <span className='text-red-400'>System</span></div>
-                    <Link to="/projects/QRMS" className='text-white px-2 rounded-3xl mt-2.5 bg-black'>Read More</Link>
-                  </div>
-                  <p className="text-gray-700 text-base">Report Management System</p>
-                </div>
-                <div className="px-6 pb-2">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#BIT</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#report</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#manage</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#organise</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#academic</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#records</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group p-2 relative mt-5">
-            <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <Link to="/projects/VMart">
-                <img src={vmart} className="mx-auto group-hover:scale-110 scale-75 duration-500 w-96 h-72" alt="" />
-              </Link>
-              <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
-                <div className="px-6 py-4">
-                  <div className='mb-2 flex w-fit space-x-3'>
-                    <div className="font-extrabold text-3xl text-green-400">V-Mart</div>
-                    <Link to="/projects/VMart" className='text-white px-2 rounded-3xl mt-2.5 bg-black'>Read More</Link>
-                  </div>
-                  <p className="text-gray-700 text-base">A E-Commerce Website</p>
-                </div>
-                <div className="px-6 pb-2">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sell</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#purchase</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ease</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ruralBussiness </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group p-2 relative mt-5">
-            <div className="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg bg-gradient-to-br from-gray-50 via-gray-100 to-gray-300 group-hover:dark:shadow-gray-800 rounded-md duration-500">
-              <Link to="/projects/ToDoList">
-                <img src={toDoList} className="mx-auto group-hover:scale-110 duration-500 w-72 h-72" alt="" />
-              </Link>
-              <div className="md:absolute z-20 -bottom-40 group-hover:bottom-3 start-3 end-3 duration-500">
-                <div className="px-6 py-4">
-                  <div className='mb-2 flex w-fit space-x-3'>
-                    <div className="font-extrabold text-3xl text-[#ed4935]">To Do List</div>
-                    <Link to="/projects/ToDoList" className='text-white px-2 rounded-3xl mt-2.5 bg-black'>Read More</Link>
-                  </div>
-                  <p className="text-gray-700 text-base">A Task Manager</p>
-                </div>
-                <div className="px-6 pb-2">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#task</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#track</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#manage</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#organise</span>
                 </div>
               </div>
             </div>

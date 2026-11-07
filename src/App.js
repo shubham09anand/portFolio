@@ -1,6 +1,6 @@
 import './App.css';
 import "./style/Fonts.css"
-import Home from "./components/Home";
+import Home from "./component2/Home";
 
 function App() {
   return (
