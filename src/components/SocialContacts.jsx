@@ -37,13 +37,6 @@ const contacts = [
 		icon: FaLinkedin,
 		link: "https://www.linkedin.com/in/shubham09anand/",
 	},
-	{
-		id: 5,
-		name: "Discord",
-		username: "shubham09anand",
-		icon: FaDiscord,
-		link: null,
-	},
 ];
 
 const SocialContacts = () => {
