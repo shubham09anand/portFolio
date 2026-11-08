@@ -65,10 +65,10 @@ const Stack = () => {
                                    </p>
                               </div>
 
-                              <ArrowUpRight
+                              {/* <ArrowUpRight
                                    size={18}
                                    className="text-neutral-500 transition-colors group-hover:text-lime-300"
-                              />
+                              /> */}
                          </motion.div>
                     </Reveal>
                ))}
