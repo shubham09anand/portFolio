@@ -5,6 +5,7 @@ import Technology from "./Technology";
 import Education from "./Education";
 import Stack from "./Stack";
 import profile from "../assets/shubham.png";
+import SocialContacts from "../components/SocialContacts";
 
 const Reveal = ({ children, className = "", delay = 0 }) => (
      <motion.div
@@ -98,6 +99,7 @@ export default function Home() {
                                         </p>
                                    </div>
                               </div>
+                              <SocialContacts />
                          </Reveal>
 
                          {/* Profile image and Services */}
