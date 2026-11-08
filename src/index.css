@@ -42,16 +42,6 @@ body::-webkit-scrollbar {
   box-shadow: 0 0px 40px rgba(8, 7, 16, 0.6);
 }
 
-::-moz-selection {
-  color: white;
-  background: rgb(159, 159, 157);
-}
-
-::selection {
-  color: white;
-  background: rgb(159, 159, 157);
-}
-
 /* Keyframes for screen sizes below or equal to 79 pixels */
 @keyframes expandWidth1 {
   0% {
@@ -130,4 +120,17 @@ body::-webkit-scrollbar {
 
 .animated-div2 {
   animation-name: expandWidth2;
+}
+
+
+/* Global text selection */
+::selection {
+  background-color: #001e2b;
+  color: #d9f99d;
+}
+
+/* Firefox support */
+::-moz-selection {
+  background-color: #001e2b;
+  color: #d9f99d;
 }
